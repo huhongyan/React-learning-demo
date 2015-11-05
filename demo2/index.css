@@ -7,8 +7,69 @@
 .commentList{
     margin-bottom: 20px;
 }
-.commentAuthor{
-    margin: 0;
+.comment{
+    border-top: 1px dashed #ddd;
+}
+.commentForm{
+    border-top: 1px solid #ddd;
+}
+.commentForm-author, .commentForm-text{
+    display: block;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    outline: none;
+}
+.commentForm-author:focus, .commentForm-text:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.commentForm-author{
+    width: 200px;
+}
+.commentForm-text{
+    box-sizing: border-box;
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+.commentForm-submit{
     display: inline-block;
-    margin-right: 20px;
+    border: 0;
+    padding: 6px 12px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3333333;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 -4px 0 #2a6496;
+    box-shadow: inset 0 -4px 0 #2a6496;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    outline: none;
+}
+.commentForm-submit:hover{
+    background-color: #2a6496;
 }
