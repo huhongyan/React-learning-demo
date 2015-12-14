@@ -123,6 +123,7 @@ var Comment = React.createClass({
                 <h2 className="commentAuthor">
                     {this.props.author}
                 </h2>
+                {/* 直接使用原始html */}
                 <span dangerouslySetInnerHTML={this.rawMarkup()} />
             </div>
         );
